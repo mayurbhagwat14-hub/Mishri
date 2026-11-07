@@ -113,7 +113,8 @@ body::before {
 }
 
 .content-stage-large-screen {
-  max-width: 680px !important;
+  max-width: 820px !important;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -123,7 +124,7 @@ body::before {
   }
 
   .content-stage-large-screen {
-    max-width: 720px !important;
+    max-width: 860px !important;
   }
 }
 
@@ -585,11 +586,11 @@ body::before {
 .birthday-card-hero {
   position: relative;
   width: 100%;
-  max-width: 240px;
-  border-radius: 20px;
+  max-width: 290px;
+  border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(112, 70, 83, 0.16);
-  margin: 0 auto 16px;
+  box-shadow: 0 14px 34px rgba(112, 70, 83, 0.17);
+  margin: 0 auto 18px;
   background: #FFFFFF;
   border: 4px solid #FFFFFF;
 }
@@ -1353,7 +1354,7 @@ body::before {
    ========================================================= */
 .large-screen-hug-wrapper {
   width: 100%;
-  max-width: 680px;
+  max-width: 860px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1372,12 +1373,13 @@ body::before {
 
 .large-video-card {
   width: 100%;
+  max-width: 860px;
   background: #FFFFFF;
-  border-radius: 26px;
-  box-shadow: 0 20px 48px rgba(112, 70, 83, 0.18), 0 4px 18px rgba(223, 110, 130, 0.12);
+  border-radius: 28px;
+  box-shadow: 0 24px 54px rgba(112, 70, 83, 0.18), 0 4px 20px rgba(223, 110, 130, 0.14);
   border: 1px solid rgba(244, 196, 207, 0.7);
-  padding: 16px;
-  margin-bottom: 22px;
+  padding: 14px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;

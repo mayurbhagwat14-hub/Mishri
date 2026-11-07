@@ -98,21 +98,6 @@ export default function App() {
           />
         )}
       </main>
-
-      {/* Subtle footer */}
-      {currentScreen > 1 && (
-        <footer
-          style={{
-            fontSize: '0.82rem',
-            color: 'var(--color-text-muted)',
-            textAlign: 'center',
-            padding: '12px 0 20px',
-            zIndex: 5
-          }}
-        >
-          <span>Happy Birthday Surprise ♡</span>
-        </footer>
-      )}
     </div>
   );
 }

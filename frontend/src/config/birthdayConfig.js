@@ -81,18 +81,24 @@ export const birthdayConfig = {
     fallbackPhotoPath: "/images/her-photo-placeholder.svg",
     caption: "One of my favorite things is seeing you smile. ♡",
     supportingText: "I hope life gives you countless reasons to smile like that.",
-    buttonText: "One last surprise ♡"
+    buttonText: "One last Thing ♡"
   },
 
   // Screen 6: Final Birthday Surprise
   screenSix: {
     heading: (nickname) => `Happy Birthday, ${nickname ? nickname : "Beautiful Soul"} ♡`,
     message: [
-      "I hope this year brings you closer to your dreams, surrounds you with genuine happiness, and gives you memories you'll always want to keep.",
-      "Never stop being yourself, never stop dreaming, and never forget that you deserve beautiful things."
+      "So again Happy Birthday pagal and happy Diwali",
+      "Mai personally message toh nahi kar sakta tha tujha kyu ki mera sa ho nahi paiga",
+      "Isliya maina ya socha ki website banata hu uska through wish kar dunga",
+      "Chodo ya saab maje karo or chocolate pahucha Dena jara 😂",
+      "Ya mai kuch time mai delete kar dunga jaisa he aap dekh longe toh isko issue na banaye",
+      "Thankyou ki jarurat nahi hai",
+      "Bass mai roj raat mai 9 baje kai jata hu toh ...if you know you know",
+      "Maje karo bye ...."
     ],
-    handwrittenNote: "Today is your day. Make it beautiful. ♡",
-    signature: "Made with love, just for you.",
+    handwrittenNote: "Bye ..... Happy Birthday 🎉❤️",
+    signature: "",
     replayText: "Experience it again ↺",
     sunsetSceneImage: "/images/sunset-kittens.jpg"
   }

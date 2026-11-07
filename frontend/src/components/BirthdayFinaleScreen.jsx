@@ -5,7 +5,7 @@ import { Heart, RotateCcw } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export default function BirthdayFinaleScreen({ onReplay, disabled }) {
-  const { screenSix, nickname } = birthdayConfig;
+  const { screenSix } = birthdayConfig;
 
   // Soft, delicate sparkle release on finale entrance
   useEffect(() => {
@@ -33,61 +33,65 @@ export default function BirthdayFinaleScreen({ onReplay, disabled }) {
       <div
         className="image-hero-frame"
         style={{
-          maxWidth: '400px',
-          boxShadow: '0 20px 45px rgba(112, 70, 83, 0.18)',
-          background: 'linear-gradient(180deg, #FFFFFF 0%, #FFF5EC 100%)'
+          maxWidth: '380px',
+          boxShadow: '0 16px 38px rgba(112, 70, 83, 0.16)',
+          background: 'linear-gradient(180deg, #FFFFFF 0%, #FFF5EC 100%)',
+          marginBottom: '20px'
         }}
       >
         <img
           src={screenSix.sunsetSceneImage}
           alt="Two cute kittens looking toward a warm glowing sunset horizon"
           loading="eager"
-          style={{ height: '260px' }}
+          style={{ height: '230px', objectFit: 'cover' }}
         />
       </div>
 
-      <h1 className="heading-script" style={{ fontSize: '2.3rem', marginBottom: '12px' }}>
-        {screenSix.heading(nickname)}
-      </h1>
-
+      {/* Message Card Container - High contrast, prominent & easily readable */}
       <div
         style={{
-          maxWidth: '380px',
-          margin: '0 auto 20px',
+          width: '100%',
+          maxWidth: '400px',
+          margin: '0 auto 22px',
+          background: '#FFFFFF',
+          borderRadius: '22px',
+          padding: '24px 22px',
+          boxShadow: '0 12px 35px rgba(112, 70, 83, 0.12)',
+          border: '1.5px solid rgba(244, 196, 207, 0.7)',
+          textAlign: 'center',
           display: 'flex',
           flexDirection: 'column',
-          gap: '12px'
+          gap: '14px'
         }}
       >
         {screenSix.message.map((msg, idx) => (
-          <p key={idx} className="body-warm" style={{ margin: 0, fontSize: '0.96rem' }}>
+          <p
+            key={idx}
+            style={{
+              margin: 0,
+              fontSize: idx === 0 ? '1.14rem' : '1.02rem',
+              fontWeight: idx === 0 ? 700 : 500,
+              color: idx === 0 ? '#DF6E82' : '#4E2C37',
+              lineHeight: 1.62,
+              letterSpacing: '0.01em'
+            }}
+          >
             {msg}
           </p>
         ))}
-      </div>
 
-      <div
-        style={{
-          fontFamily: "var(--font-handwriting)",
-          fontSize: '1.9rem',
-          color: 'var(--color-text-deep)',
-          fontWeight: 700,
-          margin: '10px 0 6px',
-          lineHeight: 1.25
-        }}
-      >
-        {screenSix.handwrittenNote}
-      </div>
-
-      <div
-        style={{
-          fontSize: '0.92rem',
-          color: 'var(--color-dusty-rose)',
-          fontWeight: 600,
-          marginBottom: '26px'
-        }}
-      >
-        {screenSix.signature}
+        <div
+          style={{
+            fontFamily: "var(--font-handwriting)",
+            fontSize: '1.85rem',
+            color: '#DF6E82',
+            fontWeight: 700,
+            marginTop: '8px',
+            lineHeight: 1.25
+          }}
+        >
+          {screenSix.handwrittenNote}
+        </div>
       </div>
 
       <button
@@ -97,11 +101,11 @@ export default function BirthdayFinaleScreen({ onReplay, disabled }) {
         onClick={onReplay}
         disabled={disabled}
         style={{
-          padding: '10px 24px',
-          fontSize: '0.9rem'
+          padding: '12px 28px',
+          fontSize: '0.95rem'
         }}
       >
-        <RotateCcw size={15} />
+        <RotateCcw size={16} />
         <span>{screenSix.replayText}</span>
       </button>
     </TransitionWrapper>

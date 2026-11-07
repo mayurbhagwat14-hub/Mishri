@@ -59,21 +59,14 @@ export default function BirthdayCardScreen({ selectedKitten, onNext, isMusicPlay
         {/* Beautiful Birthday Wishes */}
         <div className="birthday-card-letter">
           <p className="birthday-message-p">
-            Today is your day, and I hope it brings you endless reasons to smile! 🌸
+            I hope this year brings you closer to your dreams, surrounds you with genuine happiness, and gives you memories you'll always want to keep.
           </p>
           <p className="birthday-message-p">
-            May your year ahead be blessed with pure happiness, wonderful moments, and all the love your heart can hold.
-          </p>
-          <p className="birthday-message-p">
-            Never forget how truly special and wonderful you are. Keep shining bright! ✨
+            Never stop being yourself, never stop dreaming, and never forget that you deserve beautiful things.
           </p>
 
           <div className="birthday-handwritten-note">
-            "Make every moment beautiful. You deserve the best! ♡"
-          </div>
-
-          <div className="birthday-signature">
-            — Made with lots of love just for you
+            Today is your day. Make it beautiful. ♡
           </div>
         </div>
 

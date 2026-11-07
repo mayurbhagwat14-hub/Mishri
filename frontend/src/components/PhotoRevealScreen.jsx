@@ -44,11 +44,6 @@ export default function PhotoRevealScreen({ onNext, onBack, disabled }) {
           </div>
         </div>
 
-        {/* Warm Subtitle Message */}
-        <p className="body-warm" style={{ maxWidth: '440px', margin: '0 auto 20px', fontSize: '0.96rem', textAlign: 'center', color: '#704653' }}>
-          No matter the distance, whenever you need comfort or a reason to smile, this hug is right here for you. ♡
-        </p>
-
         {/* Bottom Navigation Buttons */}
         <div className="hug-screen-nav-actions">
           <button
@@ -80,7 +75,7 @@ export default function PhotoRevealScreen({ onNext, onBack, disabled }) {
               gap: '8px'
             }}
           >
-            <span>One last surprise ♡</span>
+            <span>One last Thing ♡</span>
             <Heart size={18} fill="#FFFFFF" />
           </button>
         </div>
